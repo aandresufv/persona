@@ -5,6 +5,7 @@ public class Persona {
     private int dniSinLetra;
     private int edad;
     private String nacionalidad;
+    private String colorOjos;
 
     private String genero;
 
@@ -12,6 +13,9 @@ public class Persona {
 
     private String universidad;
 
+    public String getColorOjos(){
+        return colorOjos;
+    }
     public String getNombre(){
         return nombre;
     }
@@ -40,9 +44,15 @@ public class Persona {
         return nacionalidad;
     }
 
+    public void setcolorOjos(String ojos){
+        this.colorOjos = ojos;
+    }
+
     public void setNombre(String nom){
         this.nombre = nom;
     }
+
+
 
     public void setApellidos(String apell){
         this.apellidos = apell;
@@ -85,4 +95,6 @@ public class Persona {
     public void setUniversidad(String universidad) {
         this.universidad = universidad;
     }
+
+
 }
